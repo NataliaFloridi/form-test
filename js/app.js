@@ -1,8 +1,7 @@
 let validObj = {
-    nome: true,
-    cpf:true,
-    celular:true,
-    endereço:true,
+    nome: false,
+    cpf: false,
+    endereco: false,
 }
 
 function validarForm() {
@@ -146,15 +145,12 @@ inputCelular.addEventListener('blur', function() {
     let regexTexto = /(\(\d{2}\)\s)(\d{4,5}\-\d{4})/ //Validação com DDD
 
     if (regexTexto.test(this.value.trim())) {
-        validObj.celular = true
         document.querySelector('.erro-celular').style.display = 'none'
         document.querySelector('.sucesso-celular').style.display = 'block'
     } else {
-        validObj.celular = false
         document.querySelector('.sucesso-celular').style.display = 'none'
         document.querySelector('.erro-celular').style.display = 'block'
     }
-    validarForm()
 })
 
 // Validação Telefone

@@ -19,7 +19,6 @@ function validarForm() {
     }  
 }
 
-
 // Validação input Nome
 let inputNome = document.querySelector('#inputNome')
 inputNome.addEventListener('blur', function() {
@@ -192,7 +191,7 @@ selectEstado.addEventListener('change', function() {
     let selectedIndex = selectEstado.selectedIndex
     let itemSelected = selectEstado.options[selectedIndex]
 
-    if(itemSelected != ""){
+    if(itemSelected.value != ""){
         document.querySelector('.erro-uf').style.display = 'none'
         document.querySelector('.sucesso-uf').style.display = 'block'
     } else {

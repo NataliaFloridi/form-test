@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+
+        <!-- INÍCIO NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand text-uppercase" href="#">Crud</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Clientes
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">A</a></li>
+                                <li><a class="dropdown-item" href="#">B</a></li>
+                                <li><a class="dropdown-item" href="#">C</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- FINAL NAVBAR -->
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- INÍCIO FORMULÁRIO -->
+        <form class="row g-3 form-exercicio">
+            
+            <h1 class="col-12 mt-4">Novo Cliente</h1>
+
+            <!-- NOME / RAZÃO SOCIAL -->
+            <div class="col-lg-6">
+
+                <label for="inputNome" class="form-label">Nome / Razão Social</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo ou Razão Social">
+
+                <div class="erro-nome erro">Nome inválido</div>
+                <div class="sucesso-nome sucesso">OK</div>
+                
+            </div>
+
+            <!-- CPF/CNPJ -->
+            <div class="col-lg-3">
+
+                <label for="inputCpf" class="form-label">CNPJ / CPF</label>
+                <input type="text" class="form-control" id="inputCpf" placeholder="__.___.___/____-__ ou ___.___.___-__">
+                <div class="erro-cpf erro">CPF inválido</div>
+                <div class="sucesso-cpf sucesso">OK</div>
+
+            </div>
+
+            <!-- DATA NASCIMENTO -->
+            <div class="col-lg-3">
+
+                <label for="inputDataNascimento" class="form-label">Data de Nascimento</label>
+                <input type="text" class="form-control" id="inputDataNascimento" placeholder="dd/mm/aaaa">
+                <div class="erro-data erro">Data inválida</div>
+                <div class="sucesso-data sucesso">OK</div>
+
+            </div>
+           
+            <!-- ENDEREÇO -->
+            <div class="col-lg-4">
+
+                <label for="inputEndereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputEndereco" placeholder="Rua, nº - complemento">
+                <div class="erro-endereco erro">Endereço inválido</div>
+                <div class="sucesso-endereco sucesso">OK</div>
+
+            </div>
+
+            <!-- BAIRRO -->
+            <div class="col-lg-3">
+
+                <label for="inputBairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
+                <div class="erro-bairro erro">Bairro inválido</div>
+                <div class="sucesso-bairro sucesso">OK</div>
+
+            </div>
+
+            <!-- CEP -->
+            <div class="col-lg-2">
+
+                <label for="inputCep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputCep" placeholder="_____-__">
+                <div class="erro-cep erro">CEP inválido</div>
+                <div class="sucesso-cep sucesso">OK</div>
+
+            </div>
+
+            <!-- DATA CADASTRO -->
+            <div class="col-lg-3">
+
+                <label for="inputDataCadastro" class="form-label">Data de Cadastro</label>
+                <input type="text" class="form-control custom-data-cadastro" id="inputDataCadastro" placeholder="dd/mm/aaaa">
+                <div class="erro-data-cadastro erro">Data inválida</div>
+                <div class="sucesso-data-cadastro sucesso">OK</div>
+
+            </div>
+
+            <!-- MUNICÍPIO-->
+            <div class="col-lg-4">
+
+                <label for="inputMunicipio" class="form-label">Município</label>
+                <input type="text" class="form-control" id="inputMunicipio" placeholder="Município">
+                <div class="erro-municipio erro">Município inválido</div>
+                <div class="sucesso-municipio sucesso">OK</div>
+
+            </div>
+
+            <!-- TELEFONE -->
+            <div class="col-lg-2">
+
+                <label for="inputTelefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" id="inputTelefone" placeholder="(xx) 0xxxx-xxxx">
+                <div class="erro-telefone erro">Telefone inválido</div>
+                <div class="sucesso-telefone sucesso">OK</div>
+
+            </div>
+
+            <!-- CELULAR -->
+            <div class="col-lg-2">
+
+                <label for="inputCelular" class="form-label">Celular</label>
+                <input type="tel" class="form-control" id="inputCelular" placeholder="(xx) xxxxx-xxxx">
+                <div class="erro-celular erro">Celular inválido</div>
+                <div class="sucesso-celular sucesso">OK</div>
+
+            </div>
+
+            <!-- INSCRIÇÃO ESTADUAL -->
+            <div class="col-lg-3">
+
+                <label for="inputInscricaoEstadual" class="form-label">Inscrição Estadual</label>
+                <input type="text" class="form-control" id="inputInscricaoEstadual" placeholder="___.___.___.___">
+                <div class="erro-inscricao erro">Inscrição Est. inválida</div>
+                <div class="sucesso-inscricao sucesso">OK</div>
+
+            </div>
+
+            <!-- UF -->
+            <div class="col-lg-1">
+
+                <label for="inputUf" class="form-label">UF</label>
+
+                <select id="inputUf" class="form-select select-estado">
+
+                    <option selected value="">UF</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="RJ">Rio de Janeirop</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PR">Paraná</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="GO">Goiás</option>
+                    <option value="PA">Pará</option>
+                    <option value="BA">Bahia</option>
+                    <option value="TO">Tocantins</option>
+
+                </select>
+
+                <div class="erro-uf erro">Digite um UF</div>
+                <div class="sucesso-uf sucesso">OK</div>
+
+            </div>
+            <!-- Final Município / DDD / Telefone / Inscrição Estadual / UF -->
+
+            <!-- Início Botões -->
+            <div class="col-12">
+
+                <button type="submit" disabled class="btn btn-primary btn-custom">Salvar</button>
+                <button type="reset" class="btn btn-light">Cancelar</button>
+
+            </div>
+            <!-- Final Botões -->
+
+        </form>
+        <!-- FINAL FORMULÁRIO -->
+    </main>
+
+    <hr>
+    <!-- FOOTER -->
+    <footer>
+
+        <p class="text-center">2016 - Web Dev Academy</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

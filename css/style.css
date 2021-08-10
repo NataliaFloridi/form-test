@@ -1,0 +1,13 @@
+.custom-data-cadastro {
+    background-color: #c5c5c5;
+}
+
+.erro {
+    color: red;
+    display: none;
+}
+
+.sucesso {
+    color: green;
+    display: none;
+}
